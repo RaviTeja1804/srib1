@@ -16,8 +16,8 @@ const userModel = new mongoose.Schema({
         minilength: 4
     },
     pieces: {
-        type: Number,
-        default: 0
+        type: [Number],
+        default: []
     }
 }, {timestamps: true})
 
